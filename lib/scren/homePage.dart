@@ -36,10 +36,17 @@ class _InterestsScreenState extends State<InterestsScreen> {
       appBar: AppBar(
         leading: Icon(Icons.menu),
         title: const Text(" Bienvenue fifi ! " , style: TextStyle(fontWeight: FontWeight.bold),),
-        actions: const [
+        actions:  [
           Icon(Icons.notifications ),
           SizedBox(width: 10,),
-          Icon(Icons.share )
+          Icon(Icons.share ),
+           Switch(
+            value: themeNotifier.themeMode == ThemeMode.dark, // Vérifie si c'est en mode sombre
+            onChanged: (bool value) {
+              themeNotifier.toggleThemeMode(); // Bascule entre les modes
+            },
+            activeColor: Colors.white,
+          ),
         ],
       ),
       body: Stack(
