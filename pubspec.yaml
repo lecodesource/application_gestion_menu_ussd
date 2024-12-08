@@ -1,0 +1,41 @@
+name: menu_ussd
+description: "A new Flutter project."
+
+# Empêche de publier accidentellement sur pub.dev
+publish_to: 'none'
+
+# Version de l'application
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+# Dépendances principales
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  contacts_service: ^0.6.3
+  permission_handler: ^11.3.1
+  url_launcher: ^6.3.1
+  provider: ^6.1.2
+
+
+  # Dépendance pour la gestion des images réseau
+  cached_network_image: ^3.2.3
+
+  # Si vous utilisez des appels API
+  http: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Gestion des ressources (images, fichiers, etc.)
+/*  assets:
+    - asset/ */
+
